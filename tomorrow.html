@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomorrow plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ready to make tomorrow even better? Take a moment to plan ahead and set yourself up for success. 
+            Every great day starts with a great plan!</h1>
+    </header>
+
+    <div class="todo-container">
+       
+        <input type="text" id="taskInput" placeholder="Add a new task...">
+        <button id="addTaskBtn">Add Task</button>
+        <ol id="taskList"></ol>
+        <select id="taskCategory">
+            <option value="daily">Daily Task Manager</option>
+            <option value="weekly">Weekly Task Manager</option>
+            <option value="project">Project Milestone Tracker</option>
+        </select>
+    </div>
+
+    <div id="congratulationsMessage" class="hidden">
+        <div id="tick-mark"><img src="tick-mark.gif" alt="Celebration GIF"></div>
+        <h1>Congratulations, you have successfully completed one of your daily tasks... let's move forward to do the next task!</h1>
+        
+    </div>
+        
+    <div class="save-button">
+        <a href="save.html" class="save-plan">Save Tasks</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

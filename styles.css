@@ -1,0 +1,255 @@
+body {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 150;
+    font-style: normal;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 600px;
+    text-align: center;
+    background-image: url("header-background.jpg");
+    background-size: cover;
+    color: white;
+    padding: 10px;
+}
+
+.header-buttons {
+    background-color: rgba(235, 135, 32, 0.5);
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 0px;
+
+}
+
+.header-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgba(235, 135, 32, 0.3);;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.header-button:hover {
+    background-color: rgba(235, 135, 32, 0.8);
+}
+
+section {
+    width: calc(100% - 40px); 
+    margin: 20px; 
+    background-color: #f4f4f4; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    height: 500px;
+}
+
+
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin: 20px auto;
+}
+
+.task-item {
+    word-wrap: break-word;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contactForm input, #reviewForm input {
+    font-family: "Inconsolata", monospace;
+    font-style: italic;
+    font-weight: 400;
+    
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    margin-top: 70px;
+    margin-left: 25%;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit {
+    width: 8%;
+    padding: 10px;
+    margin-top: 70px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.save-button {
+    width: 6%;
+    color: white;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 47%;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.save-button a {
+    color: white;
+    text-decoration: none;
+}
+
+#taskCategory {
+    width: 50%;
+    height: 40px;
+    margin-left: 125px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#congratulationsMessage {
+    height: 400px;
+    text-align: center;
+    background-color: #f0f8ff;
+    color: rgb(224, 171, 54);
+    border: 2px solid #ccc;
+    padding: 0px;
+    margin: 20px auto;
+}
+
+#congratulationsMessage img {
+    width: 200px;
+    height: 200px;
+}
+
+#tick-mark {
+    height: 200px;
+    width:100%;
+}
+
+.hidden {
+    display: none;
+}
+
+#aboutUs {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 20px;
+}
+
+#aboutUs-image img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#aboutUs-content {
+    margin-left: 0%;
+}
+
+#userReviews {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.review {
+    font-style: italic;
+    margin: 10px 0;
+    display: none;
+}
+
+#reviewForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+#reviewForm input, #reviewForm textarea, #reviewForm button {
+    margin-top: 80px;
+    width: 70%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contactUs {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm input, #contactForm textarea, #contactForm button {
+    width: 70%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+#socialMedia a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+#socialMedia img {
+    width: 30px;
+    height: auto;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-buttons">
+            <a href="tomorrow.html" class="header-button">Make plans for tommorrow</a>
+            <a href="someday.html" class="header-button">Make plans for another day</a>
+            <!-- <a href="add-wishes.html" class="header-button">Tap to Add Your Birthday Wishes</a> -->
+        </div>
+        <h1>Organisze Your Day</h1>
+        <h4>Take control of your daily tasks. Break down barriers and reach your goals, right from the comfort of your home. </h4>
+    </header>
+
+    
+    <div class="todo-container">
+       
+        <input type="text" id="taskInput" placeholder="Add a new task...">
+        <button id="addTaskBtn">Add Task</button>
+        <ol id="taskList"></ol>
+        <select id="taskCategory">
+            <option value="daily">Daily Task Manager</option>
+            <option value="weekly">Weekly Task Manager</option>
+            <option value="project">Project Milestone Tracker</option>
+        </select>
+    </div>
+    
+        
+    <div id="congratulationsMessage" class="hidden">
+        <div id="tick-mark"><img src="tick-mark.gif" alt="Celebration GIF"></div>
+        <h1>Congratulations, you have successfully completed one of your daily tasks... let's move forward to do the next task!</h1>
+    </div>
+
+    <section id="aboutUs">
+        <div id="aboutUs-image">
+            <img src="aboutUs-background.jpg" alt="Memory 1">
+        </div>
+        <div id="aboutUs-content">
+            <h1>About Us</h1>
+            <p>At To-Do List, our mission is to help you stay organized, productive, 
+                and motivated with our feature-rich To-Do List application. 
+                Whether you're managing daily tasks, setting weekly goals, or tracking project milestones, 
+                we provide an intuitive and engaging platform to simplify your life. 
+                Our app is designed for individuals who want to efficiently manage their time and tasks, 
+                all while enjoying a seamless user experience. From personalized task management options 
+                to celebratory moments when you complete a task, we aim to make productivity fun and rewarding. 
+                Join us in staying on top of your goals and achieving more every day!</p>
+        </div>
+    </section>
+
+    <section id="userReviews">
+        <h1>User Reviews</h1>
+        <div id="reviewSlider">
+            <div class="review">"This website has transformed my productivity! It's intuitive
+                and keeps me on track effortlessly. Highly recommended for anyone looking 
+                to stay organized. Thank you for this amazing tool!" - Alice</div>
+            <div class="review">"This To-Do List app has completely transformed the way I manage my day. 
+                The simple, intuitive design and daily task manager have kept me organized and motivated. 
+                I love the celebration feature when I complete a task – it’s such a fun boost of encouragement!"
+                - Emma L.</div>
+            <div class="review">"I’ve tried a lot of task managers, but this one stands out. 
+                The project milestone tracker keeps me on top of my work, and the weekly task manager helps me plan ahead. 
+                The best part? The user-friendly interface and the celebratory animations when you complete a task
+                 – it’s the little things that keep me going!" - David K.</div>
+            <div class="review">"The To-Do List app has become an essential tool in my daily routine. 
+                Whether it's organizing my day or tracking long-term projects, this app does it all with style and ease. 
+                The review section also lets me see how other users are benefiting – great for motivation!" - Priya S</div>
+             <div class="review">"This app is amazing! It’s incredibly efficient and has features that
+                 go beyond a simple to-do list. The social features like user reviews and the ability to 
+                 manage daily and weekly tasks make it perfect for keeping everything in order. 
+                 Definitely recommend it to everyone!" - John T.</div>        
+        </div>
+        <form id="reviewForm">
+            <h4>We'd love to hear your thoughts! Your valuable review helps us improve and serve you better : </h4>
+            <input type="text" id="userName" placeholder="Your Name" required>
+            <textarea id="userReview" placeholder="Your Review" required></textarea>
+            <a href="review.html" class="submit">Submit Review</a>
+        </form>
+    </section>
+
+    <section id="contactUs">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <input type="text" id="contactName" placeholder="Your Name" required>
+            <input type="email" id="contactEmail" placeholder="Your Email" required>
+            <textarea id="contactMessage" placeholder="Your Message" required></textarea>
+            <!-- <button href="message.html" type="submit">Send Message</button> -->
+            <a href="message.html" class="submit">Send Message</a>
+        </form>
+    </section>
+
+    <footer>
+        <div id="socialMedia">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="twitter-icon.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+        </div>
+        <p>&copy; 2024 Enhanced To-Do List. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
